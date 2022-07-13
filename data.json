@@ -1,0 +1,49 @@
+{
+    "projects":[
+        {
+            "id": "0",
+            "project_name": "Random Quote Generator",
+            "description": "Displays random famous quotes each time a button is clicked.",
+            "technologies": ["HTML", "CSS", "Javascript"],
+            "live_link": "celested34.github.io/a_random_quote_generator/",
+            "github_link": "https://github.com/Celested34/A_Random_Quote_Generator",
+            "image_urls": ["/static/img/one_quote1.jpg", "/static/img/one_quote2.jpg"]
+        },
+        {
+            "id": "1",
+            "project_name": "Student Directory",
+            "description": "Displays a directory of students.",
+            "technologies": ["HTML", "CSS", "Javascript"],
+            "live_link": "https://celested34.github.io/data-pagination-and-filtering/",
+            "github_link": "https://github.com/Celested34/data-pagination-and-filtering",
+            "image_urls": ["/static/img/two_student1.jpg", "/static/img/two_student2.jpg"]
+        },
+        {
+            "id": "2",
+            "project_name": "Registration Form",
+            "description": "Displays an interactive registration form for a fictional Full Stack conference.",
+            "technologies": ["HTML", "CSS", "Javascript"],
+            "live_link": "celested34.github.io/interactive-form/",
+            "github_link": "https://github.com/Celested34/interactive-form",
+            "image_urls": ["/static/img/three_form1.jpg", "/static/img/three_form2.jpg"]
+        },
+        {
+            "id": "3",
+            "project_name": "Phrase Hunter",
+            "description": "A browser-based, word guessing game called Phrase Hunter.",
+            "technologies": ["HTML", "CSS", "Javascript"],
+            "live_link": "celested34.github.io/phrase_hunter/",
+            "github_link": "https://github.com/Celested34/Phrase_Hunter",
+            "image_urls": ["/static/img/four_phrase1.jpg", "/static/img/four_phrase2.jpg"]
+        },
+        {
+            "id": "4",
+            "project_name": "Employee Directory",
+            "description": "Displays and employee directory for a fictional company called Awesome Startup.",
+            "technologies": ["HTML", "CSS", "Javascript"],
+            "live_link": "celested34.github.io/student-files/",
+            "github_link": "https://github.com/Celested34/student-files",
+            "image_urls": ["/static/img/five_employee1.jpg", "/static/img/five_employee2.jpg"]
+        }
+    ]
+}
