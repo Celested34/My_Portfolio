@@ -46,6 +46,8 @@
     //global error handler 
     app.use((err, req, res, next) =>{
         res.status(err.status || 500);
+        res.status(err.status).send(err.message)
+        res.send('Theres been an error')
         console.log("Error", err)
     }
     )
