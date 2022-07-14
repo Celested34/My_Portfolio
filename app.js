@@ -21,11 +21,15 @@
     app.get('/about', (req, res, next) => {
         res.render('about')
     })
+
+    //Source - Treehouse Unit 6, Practice Using Data with Pug Templates
     //dynamic project routes
-    // app.get('/projects/:id', (req, res, next)=> {
-    //     let id = req.params.id;
-    //     let project = projects.find
-    // })
+    app.get('/projects/:id', (req, res, next)=> {
+        let idProject = req.params.id;
+        let project = projects.find( ({ id }) => id === idProject );
+        res.render('project', { project });
+
+    })
 
 //Source - Treehouse - Unit 6 Understanding Express Middleware Workshop
 //error handlers
@@ -41,7 +45,7 @@
     //global error handler 
     app.use((err, req, res, next) =>{
         res.status(err.status || 500);
-        res.render('error', {err })
+        res.render('error', { err })
         console.log("Error", err)
     }
     )
