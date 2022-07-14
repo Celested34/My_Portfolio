@@ -45,7 +45,6 @@
     //global error handler 
     app.use((err, req, res, next) =>{
         res.status(err.status || 500);
-        res.render('error', { err })
         console.log("Error", err)
     }
     )
