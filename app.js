@@ -31,8 +31,6 @@
         if (project){
             res.render('project', { project });
         }else{
-            const err = new Error('Not Found');
-            err.status = 404;
             next(err);
         }
 
