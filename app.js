@@ -27,7 +27,14 @@
     app.get('/projects/:id', (req, res, next)=> {
         let idProject = req.params.id;
         let project = projects.find( ({ id }) => id === idProject );
-        res.render('project', { project });
+        
+        if (project){
+            res.render('project', { project });
+        }else{
+            const err = new Error('Not Found');
+            err.status = 404;
+            next(err);
+        }
 
     })
 
@@ -45,7 +52,6 @@
     //global error handler 
     app.use((err, req, res, next) =>{
         res.status(err.status|| 500).send(err.message)
-        res.send('Theres been an error')
         console.log("Error", err)
     }
     )
