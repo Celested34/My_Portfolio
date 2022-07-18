@@ -37,16 +37,14 @@
     //catch 404 
     app.use((req, res, next) => {
         const err = new Error('Not Found');
-        if(res.status === 'undefined'){
-        err.status = 404;}
+        err.status = 404;
         next(err);
     }
 )
 
     //global error handler 
     app.use((err, req, res, next) =>{
-        res.status(err.status || 500);
-        res.status(err.status).send(err.message)
+        res.status(err.status|| 500).send(err.message)
         res.send('Theres been an error')
         console.log("Error", err)
     }
